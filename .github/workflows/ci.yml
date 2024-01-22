@@ -1,0 +1,28 @@
+name: Notifier
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Send message to TelegramBot
+        uses: ./
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            Ông nội ${{ github.actor }} vừa 💉
+            https://github.com/trongnguyenv/TT-Ecommerce/commit/${{ github.sha }}
+            Message: ${{ github.event.head_commit.message }}
