@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main
+      - develop
+      - 'feature/**'
   pull_request:
     branches:
       - main
+      - develop
+      - 'feature/**'
 
 jobs:
 
@@ -17,12 +21,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
 
-      - name: Send message to TelegramBot
+      - name: Declare some variables
+        shell: bash
+        run: |
+            echo "sha_short=$(git rev-parse --short "$GITHUB_SHA")" >> "$GITHUB_ENV"
+            echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >> "$GITHUB_ENV"
+
+      - name: Send notify
         uses: ./
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: html
           message: |
-            Ông nội ${{ github.actor }} vừa 💉
-            https://github.com/trongnguyenv/TT-Ecommerce/commit/${{ github.sha }}
-            Message: ${{ github.event.head_commit.message }}
+            🎉 Ông nội <b>${{github.actor}}</b> vừa nổ 1 commit 🎉
+            🙊🙊🙊🙊🙊
+            📌 Branch: <a href="https://github.com/${{ github.repository }}/tree/${{ env.branch }}"><b>${{env.branch}}</b></a>
+            🚧 See changes <a href="https://github.com/${{ github.repository}}/commit/${{github.sha }}"><b>ở đây</b></a>
+            ✨ Message: <em>${{ github.event.head_commit.message }}</em>
