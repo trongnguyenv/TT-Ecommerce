@@ -63,3 +63,11 @@ target="_blank">TypeScript 5.2.0</a> for the frontend with:
     </ul>
   </li>
 </ul>
+
+### References
+- <a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications" target="_blank">Designing and Developing
+  Multi-Container and Microservice-Based .NET Applications</a>
+- <a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns" target="_blank">Tackle Business Complexity in a Microservice with DDD and CQRS Patterns</a>
+- <a href="https://event-driven.io/en/using_strongly_typed_ids_with_marten" target="_blank">Using strongly-typed identifiers with Marten</a>
+- <a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects" target="_blank">Implement value objects</a>
+- <a href="https://talkdotnet.wordpress.com/2019/03/15/newtonsoft-json-deserializing-objects-that-have-private-setters" target="_blank">Newtonsoft Json – Deserializing objects that have private setters</a>

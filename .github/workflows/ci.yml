@@ -34,8 +34,7 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: html
           message: |
-            🎉 Ông nội <b>${{github.actor}}</b> vừa nổ 1 commit 🎉
-            🙊🙊🙊🙊🙊
+            🎉 Ông nội <b>${{github.actor}}</b> vừa ${{ github.event_name }} commit 🎉
             📌 Branch: <a href="https://github.com/${{ github.repository }}/tree/${{ env.branch }}"><b>${{env.branch}}</b></a>
-            🚧 See changes <a href="https://github.com/${{ github.repository}}/commit/${{github.sha }}"><b>ở đây</b></a>
+            🚧 See changes <a href="https://github.com/${{ github.repository}}/commit/${{github.sha }}"><b>here</b></a>
             ✨ Message: <em>${{ github.event.head_commit.message }}</em>

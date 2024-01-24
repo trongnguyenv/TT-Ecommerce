@@ -1,0 +1,15 @@
+global using MediatR;
+global using System;
+global using System.Linq;
+global using Marten.Schema;
+global using Newtonsoft.Json;
+global using System.Threading;
+global using System.Reflection;
+global using System.Threading.Tasks;
+global using System.Collections.Generic;
+global using Newtonsoft.Json.Serialization;
+global using TTEcommerce.Core.Domain;
+global using TTEcommerce.Core.EventBus;
+global using TTEcommerce.Core.CQRS.CommandHandling;
+global using TTEcommerce.Core.Persistence;
+global using TTEcommerce.Core.CQRS.QueryHandling;

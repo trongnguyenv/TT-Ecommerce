@@ -1,0 +1,23 @@
+name: TTEcommerce
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 7.0.x
+      - name: Restore dependencies
+        run: dotnet restore TTEcommerce.sln
+      - name: Build
+        run: dotnet build --no-restore TTEcommerce.sln
+      - name: Test
+        run: dotnet test --no-build --verbosity normal TTEcommerce.sln
