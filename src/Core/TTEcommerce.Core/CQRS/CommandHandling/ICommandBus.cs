@@ -2,5 +2,6 @@ namespace TTEcommerce.Core.CQRS.CommandHandling;
 
 public interface ICommandBus
 {
-    Task Send<TCommand>(TCommand command) where TCommand : ICommand;
+    Task SendAsync<TCommand>(TCommand command, CancellationToken cancellationToken)
+        where TCommand : ICommand;
 }

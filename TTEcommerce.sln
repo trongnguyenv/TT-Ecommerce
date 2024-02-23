@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTEcommerce.Core", "src\Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTEcommerce.Core.Test", "src\Core\TTEcommerce.Core.Test\TTEcommerce.Core.Test.csproj", "{AC602AA8-477B-4868-B433-02EF81777212}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTEcommerce.Core.Infrastructure", "src\Core\TTEcommerce.Core.Infrastructure\TTEcommerce.Core.Infrastructure.csproj", "{F23D6FD2-CDBA-459A-8A19-CCBDD90B107F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{AC602AA8-477B-4868-B433-02EF81777212}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC602AA8-477B-4868-B433-02EF81777212}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC602AA8-477B-4868-B433-02EF81777212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23D6FD2-CDBA-459A-8A19-CCBDD90B107F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23D6FD2-CDBA-459A-8A19-CCBDD90B107F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23D6FD2-CDBA-459A-8A19-CCBDD90B107F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23D6FD2-CDBA-459A-8A19-CCBDD90B107F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
