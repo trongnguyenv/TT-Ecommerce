@@ -9,6 +9,13 @@ public class TokenRequester : ITokenRequester
     private readonly IHttpContextAccessor _contextAccessor;
     private readonly HttpClient _httpClient;
 
+    public TokenRequester(IMemoryCache cache, IHttpContextAccessor contextAccessor, IHttpClientFactory factory)
+    {
+        _cache = cache;
+        _contextAccessor = contextAccessor;
+        _httpClient = factory.CreateClient();
+    }
+
     // Caching application token
     public async Task<TokenResponse> GetApplicationTokenAsync(TokenIssuerSettings settings)
     {
@@ -41,8 +48,10 @@ public class TokenRequester : ITokenRequester
         return response;
     }
 
-    public async Task<string> GetUserTokenFromHttpContextAsync() =>
-        await _contextAccessor.HttpContext?.GetTokenAsync("access_token");
+    public async Task<string> GetUserTokenFromHttpContextAsync()
+    {
+        return await _contextAccessor.HttpContext?.GetTokenAsync("access_token");
+    }
 
     private async Task<TokenResponse> RequestApplicationTokenAsync(TokenIssuerSettings settings)
     {

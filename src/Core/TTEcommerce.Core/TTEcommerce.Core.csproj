@@ -11,6 +11,7 @@
       <PackageReference Include="Marten" Version="6.4.1" />
       <PackageReference Include="MediatR" Version="12.2.0" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="NSubstitute" Version="5.1.0" />
     </ItemGroup>
 
 </Project>

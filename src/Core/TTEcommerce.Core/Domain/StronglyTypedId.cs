@@ -4,6 +4,8 @@ namespace TTEcommerce.Core.Domain;
 
 public abstract class StronglyTypedId<T> : ValueObject<StronglyTypedId<T>>
 {
+    public T Value { get; }
+    
     public StronglyTypedId(T value)
     {
         if (value.Equals(Guid.Empty))
@@ -11,8 +13,6 @@ public abstract class StronglyTypedId<T> : ValueObject<StronglyTypedId<T>>
 
         Value = value;
     }
-
-    public T Value { get; }
 
     public override int GetHashCode()
     {

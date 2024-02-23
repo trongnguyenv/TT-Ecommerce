@@ -71,3 +71,6 @@ target="_blank">TypeScript 5.2.0</a> for the frontend with:
 - <a href="https://event-driven.io/en/using_strongly_typed_ids_with_marten" target="_blank">Using strongly-typed identifiers with Marten</a>
 - <a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects" target="_blank">Implement value objects</a>
 - <a href="https://talkdotnet.wordpress.com/2019/03/15/newtonsoft-json-deserializing-objects-that-have-private-setters" target="_blank">Newtonsoft Json – Deserializing objects that have private setters</a>
+- <a href="https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html" target="_blank">Outbox Event Router</a>
+- <a href="https://viblo.asia/p/kafka-khai-niem-co-ban-part-1-vlZL9aDdLQK" target="_blank">Kafka</a>
+- <a href="https://dev.to/n_develop/mocking-the-httpclient-in-net-core-with-nsubstitute-k4j" target="_blank">Mocking the HttpClient in .NET Core (with NSubstitute)</a>

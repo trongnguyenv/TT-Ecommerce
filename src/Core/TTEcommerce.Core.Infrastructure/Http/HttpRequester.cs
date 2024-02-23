@@ -5,9 +5,9 @@ public class HttpRequester : IHttpRequester
     private const string _scheme = "Bearer";
     private readonly HttpClient _httpClient;
 
-    public HttpRequester(HttpClient httpClient)
+    public HttpRequester(IHttpClientFactory factory)
     {
-        _httpClient = httpClient;
+        _httpClient = factory.CreateClient();
     }
 
     public async Task<T> GetAsync<T>(string url, string? bearerToken = null) where T : class
