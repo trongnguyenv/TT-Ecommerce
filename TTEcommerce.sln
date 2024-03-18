@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTEcommerce.Core.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTEcommerce.Core.Infrastructure.Test", "src\Core\TTEcommerce.Core.Infrastructure.Test\TTEcommerce.Core.Infrastructure.Test.csproj", "{0BC62447-7E1B-4367-98E7-F2250766E596}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTEcommerce.ProductCatalog", "src\Services\TTEcommerce.ProductCatalog\TTEcommerce.ProductCatalog.csproj", "{DE2E5946-44D3-4F53-B592-3A40425F25F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTEcommerce.IdentityServer", "src\Crosscutting\TTEcommerce.IdentityServer\TTEcommerce.IdentityServer.csproj", "{511E0B56-B04D-4420-B4EB-CEC0D1F787F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{0BC62447-7E1B-4367-98E7-F2250766E596}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BC62447-7E1B-4367-98E7-F2250766E596}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BC62447-7E1B-4367-98E7-F2250766E596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2E5946-44D3-4F53-B592-3A40425F25F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2E5946-44D3-4F53-B592-3A40425F25F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2E5946-44D3-4F53-B592-3A40425F25F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2E5946-44D3-4F53-B592-3A40425F25F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511E0B56-B04D-4420-B4EB-CEC0D1F787F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511E0B56-B04D-4420-B4EB-CEC0D1F787F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511E0B56-B04D-4420-B4EB-CEC0D1F787F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511E0B56-B04D-4420-B4EB-CEC0D1F787F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
